@@ -17,24 +17,21 @@ To ensure optimal model performance, extensive preprocessing steps are undertake
 ### Machine Learning Models
 The project incorporates a range of machine learning models to provide accurate demand forecasts. These include:
 - **Linear Regression**: A baseline model to establish initial performance benchmarks.
-- **Decision Trees**: For capturing non-linear relationships in the data.
 - **Random Forest**: A robust ensemble method that enhances prediction accuracy.
-- **Gradient Boosting**: For fine-tuned, high-performance forecasting.
+- **XGBoost**: For fine-tuned, high-performance forecasting.
+- **MLPRegressor**: A neural network-based model for capturing complex patterns.
+- **ElasticNet**: Combines the properties of L1 and L2 regularization for improved model generalization.
 
 Each model is rigorously evaluated using performance metrics such as Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and R-squared (R²) to determine their effectiveness in predicting demand.
 
-### Forecasting and Insights
-The final step involves generating demand forecasts based on the selected models and interpreting the results. Insights are drawn to aid in strategic decision-making, focusing on improving inventory turnover, reducing stockouts, and optimizing supply chain efficiency. 
+#### Model Performance Results
+The performance of each model is summarized as follows:
 
-## Technologies and Tools
-
-This project leverages the power of Python and its rich ecosystem of libraries for data analysis and machine learning. Key technologies include:
-
-- **Python**: The programming language used for all aspects of the project.
-- **Pandas and NumPy**: For data manipulation and numerical computations.
-- **Scikit-learn**: For implementing machine learning algorithms and evaluating models.
-- **Matplotlib and Seaborn**: For creating detailed visualizations to support analysis.
-- **Jupyter Notebook**: For interactive exploration and documentation.
+- **Linear Regression**: RMSE = 0.985, MAE = 0.867, R² Test = 0.0034
+- **Random Forest**: RMSE = 1.014, MAE = 0.879, R² Test = -0.0558
+- **XGBoost**: RMSE = 1.092, MAE = 0.918, R² Test = -0.2237
+- **MLPRegressor**: RMSE = 1.260, MAE = 1.060, R² Test = -0.6287
+- **ElasticNet**: RMSE = 0.988, MAE = 0.874, R² Test = -0.0019
 
 ## Business Impacts
 
@@ -48,4 +45,4 @@ This project provides significant business value by addressing critical challeng
 
 ## Conclusion
 
-This project serves as a valuable resource for professionals and researchers in the field of supply chain management, offering a detailed and actionable framework for demand forecasting. By integrating machine learning with domain expertise, it provides a pathway to improving operational efficiency and meeting customer demands effectively.-
+This project serves as a valuable resource for professionals and researchers in the field of supply chain management, offering a detailed and actionable framework for demand forecasting. By integrating machine learning with domain expertise, it provides a pathway to improving operational efficiency and meeting customer demands effectively.
